@@ -1,0 +1,4425 @@
+{
+  "schema": "anticloud.tier-bench/1",
+  "project": "CHROMATIC_CLI",
+  "source": {
+    "repo_path": "E:\\fenta\\Downloads\\The Anticloud\\ANTICLOUD_REPOS\\DESIGN_TOOLS\\CHROMATIC_CLI\\UPSTREAM_CLONE",
+    "git": {
+      "head": "1949e36dc886796caafbb459c3aadae43268c1d0",
+      "url": "https://github.com/chromaui/chromatic-cli",
+      "branch": "main",
+      "committed_at": "2026-09-30T15:15:56Z"
+    }
+  },
+  "metrics": {
+    "files_total": 640,
+    "source_files_scanned": 547,
+    "lines_of_code": 48671,
+    "languages": {
+      ".ts": 533,
+      ".json": 39,
+      ".yml": 17,
+      ".md": 8,
+      ".lock": 7,
+      ".jsx": 7,
+      ".yaml": 6,
+      ".mjs": 6,
+      ".js": 6,
+      "(none)": 5,
+      ".html": 2,
+      ".example": 1,
+      ".mts": 1,
+      ".tsx": 1,
+      ".css": 1
+    }
+  },
+  "licence": {
+    "spdx": "MIT",
+    "class": "A",
+    "source_file": "LICENSE",
+    "redistribution_allowed": true
+  },
+  "dependencies": {
+    "count": 387,
+    "unique": 164,
+    "by_ecosystem": {
+      "npm": 387
+    },
+    "list": [
+      {
+        "ecosystem": "npm",
+        "name": "semver",
+        "version": "^7.3.5",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@actions/core",
+        "version": "^1.10.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@actions/github",
+        "version": "^5.0.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@antfu/ni",
+        "version": "^0.21.5",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@auto-it/slack",
+        "version": "^11.1.6",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@clack/prompts",
+        "version": "^1.4.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@discoveryjs/json-ext",
+        "version": "^0.5.7",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@eslint-community/eslint-plugin-eslint-comments",
+        "version": "^4.3.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@expo/config-plugins",
+        "version": "55.0.8",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@expo/config-types",
+        "version": "55.0.5",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@sentry/cli",
+        "version": "^2.37.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@sentry/node",
+        "version": "^8.30.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@snyk/dep-graph",
+        "version": "^2.9.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@storybook/addon-docs",
+        "version": "^10.3.4",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@storybook/builder-vite",
+        "version": "^10.3.4",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@storybook/html-vite",
+        "version": "^10.3.4",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@storybook/react-vite",
+        "version": "^10.3.4",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@tsconfig/node16",
+        "version": "^16.1.1",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@types/adm-zip",
+        "version": "^0.5.8",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@types/archiver",
+        "version": "^5.3.1",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@types/async-retry",
+        "version": "^1.4.3",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@types/cross-spawn",
+        "version": "^6.0.2",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@types/fs-extra",
+        "version": "^9.0.13",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@types/jsonfile",
+        "version": "^6.0.1",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@types/listr",
+        "version": "^0.14.4",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@types/mime-types",
+        "version": "^2.1.4",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@types/node",
+        "version": "18.x",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@types/picomatch",
+        "version": "^2.3.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@types/prompts",
+        "version": "^2.4.9",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@types/semver",
+        "version": "^7.3.9",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@types/ws",
+        "version": "^8",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@vitest/coverage-v8",
+        "version": "^4.1.2",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "adm-zip",
+        "version": "^0.5.17",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "ansi-html",
+        "version": "0.0.9",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "any-observable",
+        "version": "^0.5.1",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "archiver",
+        "version": "^5.3.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "async-retry",
+        "version": "^1.3.3",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "auto",
+        "version": "^11.0.5",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "boxen",
+        "version": "^7.1.1",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "chalk",
+        "version": "^4.1.2",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "clean-package",
+        "version": "^2.2.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "cpy",
+        "version": "^8.1.2",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "cross-env",
+        "version": "^7.0.3",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "cross-spawn",
+        "version": "^7.0.2",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "debug",
+        "version": "^4.3.2",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "env-ci",
+        "version": "^11.1.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "eslint",
+        "version": "^9.39.4",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "eslint-plugin-jsdoc",
+        "version": "^62.4.1",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "eslint-plugin-no-secrets",
+        "version": "^2.2.1",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "eslint-plugin-prettier",
+        "version": "^5.5.5",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "eslint-plugin-security",
+        "version": "^3.0.1",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "eslint-plugin-simple-import-sort",
+        "version": "^12.1.1",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "eslint-plugin-sort-class-members",
+        "version": "^1.21.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "eslint-plugin-unicorn",
+        "version": "^59.0.1",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "execa",
+        "version": "^9.6.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "fake-tag",
+        "version": "^2.0.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "filesize",
+        "version": "^10.1.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "find-up",
+        "version": "^7.0.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "formdata-node",
+        "version": "^6.0.3",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "fs-extra",
+        "version": "^10.0.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "globals",
+        "version": "^15.3.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "https-proxy-agent",
+        "version": "^7.0.2",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "jiti",
+        "version": "^2.7.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "json5",
+        "version": "^2.2.3",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "jsonfile",
+        "version": "^6.0.1",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "junit-report-builder",
+        "version": "3.1.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "listr",
+        "version": "0.14.3",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "listr-update-renderer",
+        "version": "^0.5.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "meow",
+        "version": "^9.0.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "mime-types",
+        "version": "^2.1.35",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "mock-fs",
+        "version": "^5.1.2",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "no-proxy",
+        "version": "^1.0.3",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "node-ask",
+        "version": "^1.0.1",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "node-fetch",
+        "version": "3.2.10",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "os-browserify",
+        "version": "^0.3.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "p-limit",
+        "version": "3.1.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "path-browserify",
+        "version": "^1.0.1",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "picocolors",
+        "version": "^1.1.1",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "picomatch",
+        "version": "2.2.2",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "pluralize",
+        "version": "^8.0.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "prettier",
+        "version": "^3.2.5",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "prompts",
+        "version": "^2.4.2",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react",
+        "version": "^17.0.2",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react-dom",
+        "version": "^17.0.2",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "read-package-up",
+        "version": "^11.0.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "snyk-nodejs-lockfile-parser",
+        "version": "2.10.4",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "snyk-nodejs-plugin",
+        "version": "2.2.1",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "sort-package-json",
+        "version": "1.50.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "storybook",
+        "version": "^10.3.4",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "string-argv",
+        "version": "^0.3.1",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "strip-ansi",
+        "version": "^7.1.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "tmp-promise",
+        "version": "3.0.2",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "ts-dedent",
+        "version": "^1.0.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "tsdown",
+        "version": "^0.21.8",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "typescript",
+        "version": "^5.2.2",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "typescript-eslint",
+        "version": "^8.5.8",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "uuid",
+        "version": "^8.3.2",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "vite",
+        "version": "^8.0.3",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "vite-tsconfig-paths",
+        "version": "^5.1.4",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "vitest",
+        "version": "^4.1.2",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "wrap-ansi",
+        "version": "^10.0.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "ws",
+        "version": "^8.18.2",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "xxhash-wasm",
+        "version": "^1.0.2",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "yarn-or-npm",
+        "version": "^3.0.1",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "zen-observable",
+        "version": "^0.8.15",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "zod",
+        "version": "^3.22.2",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@chromatic-com/cypress",
+        "version": "^0.*.* || ^1.0.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@chromatic-com/playwright",
+        "version": "^0.*.* || ^1.0.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@chromatic-com/vitest",
+        "version": "^0.*.* || ^1.0.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@actions/core",
+        "version": "^1.10.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@actions/github",
+        "version": "^5.0.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@babel/cli",
+        "version": "^7.14.8",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@babel/core",
+        "version": "^7.15.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@babel/node",
+        "version": "^7.15.4",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@babel/plugin-transform-runtime",
+        "version": "^7.15.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@babel/preset-env",
+        "version": "^7.15.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@babel/preset-typescript",
+        "version": "^7.15.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@babel/runtime",
+        "version": "^7.15.3",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@discoveryjs/json-ext",
+        "version": "^0.5.7",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@storybook/addon-essentials",
+        "version": "^6.5.6",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@storybook/builder-webpack5",
+        "version": "^6.5.6",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@storybook/csf-tools",
+        "version": "^7.0.12",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@storybook/eslint-config-storybook",
+        "version": "^3.1.2",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@storybook/linter-config",
+        "version": "^3.1.2",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@storybook/manager-webpack5",
+        "version": "^6.5.6",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@storybook/react",
+        "version": "^6.5.6",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@types/archiver",
+        "version": "^5.3.1",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@types/async-retry",
+        "version": "^1.4.3",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@types/cross-spawn",
+        "version": "^6.0.2",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@types/fs-extra",
+        "version": "^9.0.13",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@types/jest",
+        "version": "^27.5.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@types/jsonfile",
+        "version": "^6.0.1",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@types/listr",
+        "version": "^0.14.4",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@types/node",
+        "version": "^14.14.25",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@types/picomatch",
+        "version": "^2.3.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@types/progress-stream",
+        "version": "^2.0.2",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@types/semver",
+        "version": "^7.3.9",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@typescript-eslint/eslint-plugin",
+        "version": "^5.59.8",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@typescript-eslint/parser",
+        "version": "^5.59.8",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "ansi-html",
+        "version": "0.0.8",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "any-observable",
+        "version": "^0.5.1",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "archiver",
+        "version": "^5.3.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "async-retry",
+        "version": "^1.3.3",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "babel-preset-minify",
+        "version": "^0.5.1",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "chalk",
+        "version": "^4.1.2",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "cpy",
+        "version": "^8.1.5",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "cross-env",
+        "version": "^7.0.3",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "cross-spawn",
+        "version": "^7.0.2",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "debug",
+        "version": "^4.3.2",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "dotenv",
+        "version": "^8.2.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "env-ci",
+        "version": "^5.0.2",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "esbuild-jest",
+        "version": "^0.5.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "eslint",
+        "version": "^7.32.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "eslint-plugin-jest",
+        "version": "^27.2.1",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "esm",
+        "version": "^3.2.25",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "execa",
+        "version": "^5.0.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "fake-tag",
+        "version": "^2.0.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "fs-extra",
+        "version": "^10.0.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "https-proxy-agent",
+        "version": "^5.0.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "husky",
+        "version": "^7.0.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "jest",
+        "version": "^27.0.6",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "jsonfile",
+        "version": "^6.0.1",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "junit-report-builder",
+        "version": "2.1.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "lint-staged",
+        "version": "^11.1.2",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "listr",
+        "version": "0.14.3",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "meow",
+        "version": "^9.0.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "mock-fs",
+        "version": "^5.1.2",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "no-proxy",
+        "version": "^1.0.3",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "node-ask",
+        "version": "^1.0.1",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "node-fetch",
+        "version": "3.2.10",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "node-loggly-bulk",
+        "version": "^4.0.1",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "npm-run-all",
+        "version": "^4.0.2",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "observable",
+        "version": "^2.1.4",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "os-browserify",
+        "version": "^0.3.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "p-limit",
+        "version": "3.1.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "picomatch",
+        "version": "2.2.2",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "pkg-up",
+        "version": "^3.1.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "pluralize",
+        "version": "^8.0.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "prettier",
+        "version": "^2.3.2",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "progress-stream",
+        "version": "^2.0.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "prop-types",
+        "version": "^15.7.2",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react",
+        "version": "^17.0.2",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react-dom",
+        "version": "^17.0.2",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "read-pkg-up",
+        "version": "^7.0.1",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "semver",
+        "version": "^7.3.5",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "slash",
+        "version": "^3.0.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "snyk-nodejs-lockfile-parser",
+        "version": "^1.52.1",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "sort-package-json",
+        "version": "1.50.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "string-argv",
+        "version": "^0.3.1",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "strip-ansi",
+        "version": "6.0.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "tmp-promise",
+        "version": "3.0.2",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "tree-kill",
+        "version": "^1.2.2",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "ts-dedent",
+        "version": "^1.0.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "ts-loader",
+        "version": "^9.2.5",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "ts-node",
+        "version": "^10.9.1",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "tsup",
+        "version": "^6.7.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "typescript",
+        "version": "^4.3.5",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "util-deprecate",
+        "version": "^1.0.2",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "uuid",
+        "version": "^8.3.2",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "why-is-node-running",
+        "version": "^2.1.2",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "yarn-or-npm",
+        "version": "^3.0.1",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "zen-observable",
+        "version": "^0.8.15",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@actions/core",
+        "version": "^1.10.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@actions/github",
+        "version": "^5.0.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@babel/cli",
+        "version": "^7.14.8",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@babel/core",
+        "version": "^7.15.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@babel/node",
+        "version": "^7.15.4",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@babel/plugin-transform-runtime",
+        "version": "^7.15.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@babel/preset-env",
+        "version": "^7.15.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@babel/preset-typescript",
+        "version": "^7.15.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@babel/runtime",
+        "version": "^7.15.3",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@discoveryjs/json-ext",
+        "version": "^0.5.7",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@storybook/addon-essentials",
+        "version": "^6.5.6",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@storybook/builder-webpack5",
+        "version": "^6.5.6",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@storybook/csf-tools",
+        "version": "^7.0.12",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@storybook/eslint-config-storybook",
+        "version": "^3.1.2",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@storybook/linter-config",
+        "version": "^3.1.2",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@storybook/manager-webpack5",
+        "version": "^6.5.6",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@storybook/react",
+        "version": "^6.5.6",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@types/archiver",
+        "version": "^5.3.1",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@types/async-retry",
+        "version": "^1.4.3",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@types/cross-spawn",
+        "version": "^6.0.2",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@types/fs-extra",
+        "version": "^9.0.13",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@types/jest",
+        "version": "^27.5.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@types/jsonfile",
+        "version": "^6.0.1",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@types/listr",
+        "version": "^0.14.4",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@types/node",
+        "version": "^14.14.25",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@types/picomatch",
+        "version": "^2.3.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@types/progress-stream",
+        "version": "^2.0.2",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@types/semver",
+        "version": "^7.3.9",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@typescript-eslint/eslint-plugin",
+        "version": "^5.59.8",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@typescript-eslint/parser",
+        "version": "^5.59.8",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "ansi-html",
+        "version": "0.0.8",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "any-observable",
+        "version": "^0.5.1",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "archiver",
+        "version": "^5.3.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "async-retry",
+        "version": "^1.3.3",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "babel-preset-minify",
+        "version": "^0.5.1",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "chalk",
+        "version": "5.3.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "cpy",
+        "version": "^8.1.5",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "cross-env",
+        "version": "^7.0.3",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "cross-spawn",
+        "version": "^7.0.3",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "debug",
+        "version": "^4.3.2",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "dotenv",
+        "version": "^8.2.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "env-ci",
+        "version": "^5.0.2",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "esbuild-jest",
+        "version": "^0.5.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "eslint",
+        "version": "^7.32.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "eslint-plugin-jest",
+        "version": "^27.2.1",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "esm",
+        "version": "^3.2.25",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "execa",
+        "version": "^5.0.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "fake-tag",
+        "version": "^2.0.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "fs-extra",
+        "version": "^10.0.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "https-proxy-agent",
+        "version": "^5.0.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "husky",
+        "version": "^8.0.3",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "jest",
+        "version": "^27.0.6",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "jsonfile",
+        "version": "^6.0.1",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "junit-report-builder",
+        "version": "2.1.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "lint-staged",
+        "version": "^11.1.2",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "listr",
+        "version": "0.14.3",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "meow",
+        "version": "^9.0.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "mock-fs",
+        "version": "^5.1.2",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "no-proxy",
+        "version": "^1.0.3",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "node-ask",
+        "version": "^1.0.1",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "node-fetch",
+        "version": "3.2.10",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "node-loggly-bulk",
+        "version": "^4.0.1",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "npm-run-all",
+        "version": "^4.0.2",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "observable",
+        "version": "^2.1.4",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "os-browserify",
+        "version": "^0.3.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "p-limit",
+        "version": "3.1.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "picomatch",
+        "version": "2.2.2",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "pkg-up",
+        "version": "^3.1.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "pluralize",
+        "version": "^8.0.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "prettier",
+        "version": "^2.3.2",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "progress-stream",
+        "version": "^2.0.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "prop-types",
+        "version": "^15.7.2",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react",
+        "version": "^17.0.2",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react-dom",
+        "version": "^17.0.2",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "read-pkg-up",
+        "version": "^7.0.1",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "semver",
+        "version": "^7.3.5",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "slash",
+        "version": "^3.0.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "snyk-nodejs-lockfile-parser",
+        "version": "^1.52.1",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "sort-package-json",
+        "version": "1.50.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "string-argv",
+        "version": "^0.3.1",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "strip-ansi",
+        "version": "6.0.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "tmp-promise",
+        "version": "3.0.2",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "tree-kill",
+        "version": "^1.2.2",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "ts-dedent",
+        "version": "^1.0.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "ts-loader",
+        "version": "^9.2.5",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "ts-node",
+        "version": "^10.9.1",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "tsup",
+        "version": "^6.7.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "typescript",
+        "version": "^4.3.5",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "util-deprecate",
+        "version": "^1.0.2",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "uuid",
+        "version": "^8.3.2",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "why-is-node-running",
+        "version": "^2.1.2",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "yarn-or-npm",
+        "version": "^3.0.1",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "zen-observable",
+        "version": "^0.8.15",
+        "source_file": "node-src/__mocks__/dependencyChanges/berry-chalk/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@emotion/core",
+        "version": "10.0.22",
+        "source_file": "node-src/__mocks__/dependencyChanges/plain/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@emotion/styled",
+        "version": "10.0.23",
+        "source_file": "node-src/__mocks__/dependencyChanges/plain/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "polished",
+        "version": "3.4.2",
+        "source_file": "node-src/__mocks__/dependencyChanges/plain/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react",
+        "version": "16.12.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/plain/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react-dom",
+        "version": "16.12.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/plain/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "relative-deps",
+        "version": "1.0.7",
+        "source_file": "node-src/__mocks__/dependencyChanges/plain/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@babel/core",
+        "version": "7.7.5",
+        "source_file": "node-src/__mocks__/dependencyChanges/plain/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@storybook/addon-actions",
+        "version": "^6.4.22",
+        "source_file": "node-src/__mocks__/dependencyChanges/plain/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@storybook/addon-essentials",
+        "version": "^6.4.22",
+        "source_file": "node-src/__mocks__/dependencyChanges/plain/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@storybook/addon-links",
+        "version": "^6.4.22",
+        "source_file": "node-src/__mocks__/dependencyChanges/plain/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@storybook/react",
+        "version": "^6.4.22",
+        "source_file": "node-src/__mocks__/dependencyChanges/plain/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@types/lodash",
+        "version": "^4.14.191",
+        "source_file": "node-src/__mocks__/dependencyChanges/plain/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "babel-loader",
+        "version": "8.0.6",
+        "source_file": "node-src/__mocks__/dependencyChanges/plain/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "chromatic",
+        "version": "5.6.1",
+        "source_file": "node-src/__mocks__/dependencyChanges/plain/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react-docgen-typescript-loader",
+        "version": "3.6.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/plain/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react-is",
+        "version": "^17.0.2",
+        "source_file": "node-src/__mocks__/dependencyChanges/plain/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "ts-loader",
+        "version": "6.2.1",
+        "source_file": "node-src/__mocks__/dependencyChanges/plain/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "typescript",
+        "version": "3.7.3",
+        "source_file": "node-src/__mocks__/dependencyChanges/plain/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "is-number",
+        "version": "^7.0.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/pnpm-v5/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "is-number",
+        "version": "7.0.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/pnpm-workspace/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@myorg/shared",
+        "version": "workspace:*",
+        "source_file": "node-src/__mocks__/dependencyChanges/pnpm-workspace/packages/not-a-member/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "moment",
+        "version": "catalog:",
+        "source_file": "node-src/__mocks__/dependencyChanges/pnpm-workspace/packages/not-a-member/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@myorg/shared",
+        "version": "workspace:*",
+        "source_file": "node-src/__mocks__/dependencyChanges/pnpm-workspace/packages/ui/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "moment",
+        "version": "catalog:",
+        "source_file": "node-src/__mocks__/dependencyChanges/pnpm-workspace/packages/ui/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@emotion/core",
+        "version": "10.0.22",
+        "source_file": "node-src/__mocks__/dependencyChanges/react-async-10/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@emotion/styled",
+        "version": "10.0.23",
+        "source_file": "node-src/__mocks__/dependencyChanges/react-async-10/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "polished",
+        "version": "3.4.2",
+        "source_file": "node-src/__mocks__/dependencyChanges/react-async-10/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react",
+        "version": "16.12.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/react-async-10/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react-async",
+        "version": "10.0.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/react-async-10/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react-dom",
+        "version": "16.12.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/react-async-10/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "relative-deps",
+        "version": "1.0.7",
+        "source_file": "node-src/__mocks__/dependencyChanges/react-async-10/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@babel/core",
+        "version": "7.7.5",
+        "source_file": "node-src/__mocks__/dependencyChanges/react-async-10/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@storybook/addon-actions",
+        "version": "^6.4.22",
+        "source_file": "node-src/__mocks__/dependencyChanges/react-async-10/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@storybook/addon-essentials",
+        "version": "^6.4.22",
+        "source_file": "node-src/__mocks__/dependencyChanges/react-async-10/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@storybook/addon-links",
+        "version": "^6.4.22",
+        "source_file": "node-src/__mocks__/dependencyChanges/react-async-10/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@storybook/react",
+        "version": "^6.4.22",
+        "source_file": "node-src/__mocks__/dependencyChanges/react-async-10/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@types/lodash",
+        "version": "^4.14.191",
+        "source_file": "node-src/__mocks__/dependencyChanges/react-async-10/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "babel-loader",
+        "version": "8.0.6",
+        "source_file": "node-src/__mocks__/dependencyChanges/react-async-10/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "chromatic",
+        "version": "5.6.1",
+        "source_file": "node-src/__mocks__/dependencyChanges/react-async-10/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react-docgen-typescript-loader",
+        "version": "3.6.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/react-async-10/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react-is",
+        "version": "^17.0.2",
+        "source_file": "node-src/__mocks__/dependencyChanges/react-async-10/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "ts-loader",
+        "version": "6.2.1",
+        "source_file": "node-src/__mocks__/dependencyChanges/react-async-10/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "typescript",
+        "version": "3.7.3",
+        "source_file": "node-src/__mocks__/dependencyChanges/react-async-10/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@emotion/core",
+        "version": "10.0.22",
+        "source_file": "node-src/__mocks__/dependencyChanges/react-async-9/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@emotion/styled",
+        "version": "10.0.23",
+        "source_file": "node-src/__mocks__/dependencyChanges/react-async-9/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "polished",
+        "version": "3.4.2",
+        "source_file": "node-src/__mocks__/dependencyChanges/react-async-9/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react",
+        "version": "16.12.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/react-async-9/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react-async",
+        "version": "9.0.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/react-async-9/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react-dom",
+        "version": "16.12.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/react-async-9/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "relative-deps",
+        "version": "1.0.7",
+        "source_file": "node-src/__mocks__/dependencyChanges/react-async-9/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@babel/core",
+        "version": "7.7.5",
+        "source_file": "node-src/__mocks__/dependencyChanges/react-async-9/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@storybook/addon-actions",
+        "version": "^6.4.22",
+        "source_file": "node-src/__mocks__/dependencyChanges/react-async-9/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@storybook/addon-essentials",
+        "version": "^6.4.22",
+        "source_file": "node-src/__mocks__/dependencyChanges/react-async-9/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@storybook/addon-links",
+        "version": "^6.4.22",
+        "source_file": "node-src/__mocks__/dependencyChanges/react-async-9/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@storybook/react",
+        "version": "^6.4.22",
+        "source_file": "node-src/__mocks__/dependencyChanges/react-async-9/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@types/lodash",
+        "version": "^4.14.191",
+        "source_file": "node-src/__mocks__/dependencyChanges/react-async-9/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "babel-loader",
+        "version": "8.0.6",
+        "source_file": "node-src/__mocks__/dependencyChanges/react-async-9/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "chromatic",
+        "version": "5.6.1",
+        "source_file": "node-src/__mocks__/dependencyChanges/react-async-9/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react-docgen-typescript-loader",
+        "version": "3.6.0",
+        "source_file": "node-src/__mocks__/dependencyChanges/react-async-9/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react-is",
+        "version": "^17.0.2",
+        "source_file": "node-src/__mocks__/dependencyChanges/react-async-9/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "ts-loader",
+        "version": "6.2.1",
+        "source_file": "node-src/__mocks__/dependencyChanges/react-async-9/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "typescript",
+        "version": "3.7.3",
+        "source_file": "node-src/__mocks__/dependencyChanges/react-async-9/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@emotion/core",
+        "version": "10.0.22",
+        "source_file": "node-src/__mocks__/dependencyParsing/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@emotion/styled",
+        "version": "10.0.23",
+        "source_file": "node-src/__mocks__/dependencyParsing/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "moment",
+        "version": "^2.30.0",
+        "source_file": "node-src/__mocks__/dependencyParsing/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "polished",
+        "version": "3.4.2",
+        "source_file": "node-src/__mocks__/dependencyParsing/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react",
+        "version": "16.12.0",
+        "source_file": "node-src/__mocks__/dependencyParsing/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react-dom",
+        "version": "16.12.0",
+        "source_file": "node-src/__mocks__/dependencyParsing/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "relative-deps",
+        "version": "1.0.7",
+        "source_file": "node-src/__mocks__/dependencyParsing/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@babel/core",
+        "version": "7.7.5",
+        "source_file": "node-src/__mocks__/dependencyParsing/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@storybook/addon-actions",
+        "version": "^6.4.22",
+        "source_file": "node-src/__mocks__/dependencyParsing/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@storybook/addon-essentials",
+        "version": "^6.4.22",
+        "source_file": "node-src/__mocks__/dependencyParsing/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@storybook/addon-links",
+        "version": "^6.4.22",
+        "source_file": "node-src/__mocks__/dependencyParsing/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@storybook/react",
+        "version": "^6.4.22",
+        "source_file": "node-src/__mocks__/dependencyParsing/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@types/lodash",
+        "version": "^4.14.191",
+        "source_file": "node-src/__mocks__/dependencyParsing/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "babel-loader",
+        "version": "8.0.6",
+        "source_file": "node-src/__mocks__/dependencyParsing/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "chromatic",
+        "version": "5.6.1",
+        "source_file": "node-src/__mocks__/dependencyParsing/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react-docgen-typescript-loader",
+        "version": "3.6.0",
+        "source_file": "node-src/__mocks__/dependencyParsing/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react-is",
+        "version": "^17.0.2",
+        "source_file": "node-src/__mocks__/dependencyParsing/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "ts-loader",
+        "version": "6.2.1",
+        "source_file": "node-src/__mocks__/dependencyParsing/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "typescript",
+        "version": "3.7.3",
+        "source_file": "node-src/__mocks__/dependencyParsing/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "polished",
+        "version": "3.4.2",
+        "source_file": "node-src/__mocks__/dependencyParsing/pnpm-multi-document/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "typescript",
+        "version": "3.7.3",
+        "source_file": "node-src/__mocks__/dependencyParsing/pnpm-multi-document/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "chromatic",
+        "version": "file:../chromatic.tgz",
+        "source_file": "smoke-tests/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "prop-types",
+        "version": "15.8.1",
+        "source_file": "smoke-tests/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react",
+        "version": "19.2.5",
+        "source_file": "smoke-tests/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react-dom",
+        "version": "19.2.5",
+        "source_file": "smoke-tests/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@storybook/addon-docs",
+        "version": "10.3.5",
+        "source_file": "smoke-tests/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@storybook/react-vite",
+        "version": "10.3.5",
+        "source_file": "smoke-tests/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "storybook",
+        "version": "10.3.5",
+        "source_file": "smoke-tests/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "typescript",
+        "version": "5.9.3",
+        "source_file": "smoke-tests/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "vite",
+        "version": "8.0.10",
+        "source_file": "smoke-tests/package.json",
+        "raw": ""
+      }
+    ]
+  },
+  "owasp_top10": {
+    "total_findings": 28,
+    "files_with_findings": 27,
+    "severity": {
+      "high": 1,
+      "medium": 2,
+      "low": 25
+    },
+    "categories": {
+      "A01-BrokenAccessControl": {
+        "count": 0,
+        "findings": []
+      },
+      "A02-CryptographicFailures": {
+        "count": 0,
+        "findings": []
+      },
+      "A03-Injection": {
+        "count": 1,
+        "findings": [
+          {
+            "severity": "high",
+            "file": "node-src/lib/turbosnap/v1/findChangedPackageFiles.test.ts",
+            "line": 18,
+            "cwe": "CWE-95",
+            "snippet": "const regexResults = /show\\s([^:]*):(.*)/g.exec(input);"
+          }
+        ]
+      },
+      "A04-InsecureDesign": {
+        "count": 21,
+        "findings": [
+          {
+            "severity": "low",
+            "file": "action-src/main.ts",
+            "line": 26,
+            "cwe": "CWE-",
+            "snippet": "// TODO: refactor this function"
+          },
+          {
+            "severity": "low",
+            "file": "bin-src/init.ts",
+            "line": 53,
+            "cwe": "CWE-",
+            "snippet": "// TODO: refactor this function"
+          },
+          {
+            "severity": "low",
+            "file": "node-src/index.test.ts",
+            "line": 73,
+            "cwe": "CWE-",
+            "snippet": "// TODO: refactor this function"
+          },
+          {
+            "severity": "low",
+            "file": "node-src/index.ts",
+            "line": 115,
+            "cwe": "CWE-",
+            "snippet": "// TODO: refactor this function"
+          },
+          {
+            "severity": "low",
+            "file": "node-src/share.ts",
+            "line": 65,
+            "cwe": "CWE-",
+            "snippet": "// TODO: refactor build/prepare so the share flow doesn't need to stub ctx.git."
+          },
+          {
+            "severity": "low",
+            "file": "node-src/git/getCommitAndBranch.ts",
+            "line": 44,
+            "cwe": "CWE-",
+            "snippet": "// TODO: refactor this function"
+          },
+          {
+            "severity": "low",
+            "file": "node-src/git/getParentCommits.ts",
+            "line": 226,
+            "cwe": "CWE-",
+            "snippet": "// TODO: refactor this function"
+          },
+          {
+            "severity": "low",
+            "file": "node-src/lib/getOptions.ts",
+            "line": 62,
+            "cwe": "CWE-",
+            "snippet": "// TODO: refactor this function"
+          },
+          {
+            "severity": "low",
+            "file": "node-src/lib/getStorybookMetadata.ts",
+            "line": 115,
+            "cwe": "CWE-",
+            "snippet": "// TODO: Update this when we start tracking refs within the project.json file; if refs are tracked there, we can skip this logic"
+          },
+          {
+            "severity": "low",
+            "file": "node-src/lib/testUtilities.ts",
+            "line": 6,
+            "cwe": "CWE-",
+            "snippet": "* This is quite hacky solution to work-around mocking `require.resolve` but"
+          },
+          {
+            "severity": "low",
+            "file": "node-src/lib/upload.ts",
+            "line": 221,
+            "cwe": "CWE-",
+            "snippet": "// TODO: refactor this function"
+          },
+          {
+            "severity": "low",
+            "file": "node-src/lib/turbosnap/v1/findChangedDependencies.ts",
+            "line": 16,
+            "cwe": "CWE-",
+            "snippet": "// TODO: refactor this function"
+          },
+          {
+            "severity": "low",
+            "file": "node-src/lib/turbosnap/v1/findChangedPackageFiles.ts",
+            "line": 5,
+            "cwe": "CWE-",
+            "snippet": "// TODO: refactor this function"
+          },
+          {
+            "severity": "low",
+            "file": "node-src/lib/turbosnap/v1/getDependentStoryFiles.ts",
+            "line": 94,
+            "cwe": "CWE-",
+            "snippet": "// TODO: refactor this function"
+          },
+          {
+            "severity": "low",
+            "file": "node-src/tasks/snapshot.ts",
+            "line": 81,
+            "cwe": "CWE-",
+            "snippet": "// TODO: refactor this function"
+          },
+          {
+            "severity": "low",
+            "file": "node-src/tasks/prepare/traceChangedFiles.ts",
+            "line": 34,
+            "cwe": "CWE-",
+            "snippet": "// TODO: refactor this function"
+          },
+          {
+            "severity": "low",
+            "file": "node-src/tasks/verify/verifyBuild.ts",
+            "line": 128,
+            "cwe": "CWE-",
+            "snippet": "// TODO: refactor this function"
+          },
+          {
+            "severity": "low",
+            "file": "node-src/ui/messages/errors/fatalError.ts",
+            "line": 19,
+            "cwe": "CWE-",
+            "snippet": "// TODO: refactor this function"
+          },
+          {
+            "severity": "low",
+            "file": "node-src/ui/messages/errors/runtimeError.ts",
+            "line": 17,
+            "cwe": "CWE-",
+            "snippet": "// TODO: refactor this function"
+          },
+          {
+            "severity": "low",
+            "file": "node-src/ui/messages/warnings/bailFile.ts",
+            "line": 11,
+            "cwe": "CWE-",
+            "snippet": "// TODO: refactor this function"
+          },
+          {
+            "severity": "low",
+            "file": "node-src/ui/tasks/snapshot.ts",
+            "line": 45,
+            "cwe": "CWE-",
+            "snippet": "// TODO: refactor this function"
+          }
+        ]
+      },
+      "A05-SecurityMisconfiguration": {
+        "count": 0,
+        "findings": []
+      },
+      "A06-VulnerableComponents": {
+        "count": 0,
+        "findings": []
+      },
+      "A07-AuthFailures": {
+        "count": 0,
+        "findings": []
+      },
+      "A08-SoftwareDataIntegrity": {
+        "count": 4,
+        "findings": [
+          {
+            "severity": "low",
+            "file": "node-src/index.test.ts",
+            "line": 156,
+            "cwe": "CWE-319",
+            "snippet": "webUrl: 'http://test.com',"
+          },
+          {
+            "severity": "low",
+            "file": "node-src/ui/messages/errors/fatalError.stories.ts",
+            "line": 58,
+            "cwe": "CWE-319",
+            "snippet": "at FatalError (http://localhost:9009/main.6eda3407d6f38d88bd8d.bundle.js:2068:24)"
+          },
+          {
+            "severity": "low",
+            "file": "node-src/ui/messages/errors/runtimeError.stories.ts",
+            "line": 8,
+            "cwe": "CWE-319",
+            "snippet": "at MyComponent (http://localhost:9009/main.6eda3407d6f38d88bd8d.bundle.js:2068:24)"
+          },
+          {
+            "severity": "low",
+            "file": "smoke-tests/stories/tests.stories.jsx",
+            "line": 47,
+            "cwe": "CWE-319",
+            "snippet": "src=\"http://fpoimg.com/100x100?text=foozbar\""
+          }
+        ]
+      },
+      "A09-LoggingMonitoringFailures": {
+        "count": 0,
+        "findings": []
+      },
+      "A10-SSRF": {
+        "count": 2,
+        "findings": [
+          {
+            "severity": "medium",
+            "file": "node-src/io/httpClient.ts",
+            "line": 65,
+            "cwe": "CWE-918",
+            "snippet": "async fetch(url: string, options: RequestInit = {}, options_: HTTPClientFetchOptions = {}) {"
+          },
+          {
+            "severity": "medium",
+            "file": "node-src/lib/waitForSentinel.ts",
+            "line": 33,
+            "cwe": "CWE-918",
+            "snippet": "const response = await ctx.http.fetch(\r\n          url,"
+          }
+        ]
+      }
+    }
+  },
+  "owasp_llm_top10": {
+    "total_findings": 203,
+    "files_with_findings": 203,
+    "severity": {
+      "high": 0,
+      "medium": 0,
+      "low": 203
+    },
+    "categories": {
+      "LLM01-PromptInjection": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM02-SensitiveInfoDisclosure": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM03-SupplyChain": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM04-DataPoisoning": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM05-ImproperOutputHandling": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM06-ExcessiveAgency": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM07-SystemPromptLeak": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM08-VectorEmbeddingWeaknesses": {
+        "count": 203,
+        "findings": [
+          {
+            "severity": "low",
+            "file": "isChromatic.d.ts",
+            "line": 2,
+            "cwe": "CWE-",
+            "snippet": "* Returns `true` if running within Chromatic, `false` otherwise."
+          },
+          {
+            "severity": "low",
+            "file": "isChromatic.js",
+            "line": 3,
+            "cwe": "CWE-",
+            "snippet": "module.exports = function isChromatic(windowArgument) {"
+          },
+          {
+            "severity": "low",
+            "file": "isChromatic.test.ts",
+            "line": 3,
+            "cwe": "CWE-",
+            "snippet": "import isChromatic from './isChromatic';"
+          },
+          {
+            "severity": "low",
+            "file": "storybook-addon.d.ts",
+            "line": 1,
+            "cwe": "CWE-",
+            "snippet": "// Use interface augmentation to add chromatic parameter to addParameter() types."
+          },
+          {
+            "severity": "low",
+            "file": "action-src/main.ts",
+            "line": 129,
+            "cwe": "CWE-",
+            "snippet": "const shaInput = getInput('chromaticSha');"
+          },
+          {
+            "severity": "low",
+            "file": "bin-src/generateManifest.ts",
+            "line": 16,
+            "cwe": "CWE-",
+            "snippet": "*   chromatic generate-manifest -o <output-dir> [-c <config-dir>]"
+          },
+          {
+            "severity": "low",
+            "file": "bin-src/init.test.ts",
+            "line": 7,
+            "cwe": "CWE-",
+            "snippet": "addChromaticScriptToPackageJson,"
+          },
+          {
+            "severity": "low",
+            "file": "bin-src/init.ts",
+            "line": 24,
+            "cwe": "CWE-",
+            "snippet": "export const addChromaticScriptToPackageJson = async ({ packageJson, packagePath }) => {"
+          },
+          {
+            "severity": "low",
+            "file": "bin-src/reactNativeBuild.test.ts",
+            "line": 65,
+            "cwe": "CWE-",
+            "snippet": "mockedMkdtempSync.mockReturnValue('/tmp/chromatic-rn-build-test' as any);"
+          },
+          {
+            "severity": "low",
+            "file": "bin-src/reactNativeBuild.ts",
+            "line": 66,
+            "cwe": "CWE-",
+            "snippet": "$ chromatic react-native-build [options]"
+          },
+          {
+            "severity": "low",
+            "file": "bin-src/trace.test.ts",
+            "line": 14,
+            "cwe": "CWE-",
+            "snippet": "'chromatic trace ./node-src/ui/messages/errors/invalidReportPath.ts -s bin-src/__mocks__/previewStatsJson/preview-stats.trimmed.json';"
+          },
+          {
+            "severity": "low",
+            "file": "bin-src/trace.ts",
+            "line": 17,
+            "cwe": "CWE-",
+            "snippet": "*   chromatic trace [-b|--base-dir] [-c|--config-dir] [-s|--stats-file] [-u|--untraced] [-m|--mode] [<changed files>...]"
+          },
+          {
+            "severity": "low",
+            "file": "bin-src/trimStatsFile.ts",
+            "line": 18,
+            "cwe": "CWE-",
+            "snippet": "* yarn chromatic trim-stats-file"
+          },
+          {
+            "severity": "low",
+            "file": "bin-src/turbosnapManifest.ts",
+            "line": 16,
+            "cwe": "CWE-",
+            "snippet": "*   chromatic turbosnap-manifest [-s|--stats-file] [-b|--storybook-base-dir] [-c|--config-dir] [--static-dir]"
+          },
+          {
+            "severity": "low",
+            "file": "node-src/context.ts",
+            "line": 13,
+            "cwe": "CWE-",
+            "snippet": "* @param configFile Optional path to the Chromatic config file."
+          },
+          {
+            "severity": "low",
+            "file": "node-src/errorMonitoring.ts",
+            "line": 63,
+            "cwe": "CWE-",
+            "snippet": "index_url: process.env.CHROMATIC_INDEX_URL,"
+          },
+          {
+            "severity": "low",
+            "file": "node-src/index.test.ts",
+            "line": 21,
+            "cwe": "CWE-",
+            "snippet": "import { writeChromaticDiagnostics } from './lib/writeChromaticDiagnostics';"
+          },
+          {
+            "severity": "low",
+            "file": "node-src/index.ts",
+            "line": 37,
+            "cwe": "CWE-",
+            "snippet": "removeChromaticDiagnostics,"
+          },
+          {
+            "severity": "low",
+            "file": "node-src/share.test.ts",
+            "line": 20,
+            "cwe": "CWE-",
+            "snippet": "shareUrl: 'https://share.chromatic.com/test-share-id',"
+          },
+          {
+            "severity": "low",
+            "file": "node-src/share.ts",
+            "line": 35,
+            "cwe": "CWE-",
+            "snippet": "* Share a Storybook without creating a full Chromatic build. Reserves a share URL, runs the upload"
+          },
+          {
+            "severity": "low",
+            "file": "node-src/types.ts",
+            "line": 27,
+            "cwe": "CWE-",
+            "snippet": "// Chromatic options"
+          },
+          {
+            "severity": "low",
+            "file": "node-src/git/findAncestorBuildWithCommit.ts",
+            "line": 43,
+            "cwe": "CWE-",
+            "snippet": "* that has a commit, it is guaranteed to be the min number of builds \"back\" in Chromatic's history."
+          },
+          {
+            "severity": "low",
+            "file": "node-src/git/getCommitAndBranch.test.ts",
+            "line": 23,
+            "cwe": "CWE-",
+            "snippet": "'CHROMATIC_BRANCH',"
+          },
+          {
+            "severity": "low",
+            "file": "node-src/git/getCommitAndBranch.ts",
+            "line": 72,
+            "cwe": "CWE-",
+            "snippet": "CHROMATIC_SHA,"
+          },
+          {
+            "severity": "low",
+            "file": "node-src/git/getParentCommits.test.ts",
+            "line": 86,
+            "cwe": "CWE-",
+            "snippet": "const { path: dirname } = await tmp.dir({ unsafeCleanup: true, prefix: `chromatictest-` });"
+          }
+        ]
+      },
+      "LLM09-Misinformation": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM10-UnboundedConsumption": {
+        "count": 0,
+        "findings": []
+      }
+    }
+  },
+  "sbom": {
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.5",
+    "serialNumber": "urn:uuid:a6268f4e-5098-59ba-8554-3249d414d7dd",
+    "version": 1,
+    "metadata": {
+      "timestamp": "2026-10-05T15:10:59Z",
+      "component": {
+        "type": "application",
+        "name": "CHROMATIC_CLI",
+        "version": "1949e36dc886",
+        "bom-ref": "pkg:generic/anticloud/CHROMATIC_CLI@1949e36dc886",
+        "purl": "pkg:generic/anticloud/CHROMATIC_CLI@1949e36dc886",
+        "licenses": [
+          {
+            "license": {
+              "id": "MIT"
+            }
+          }
+        ]
+      },
+      "properties": [
+        {
+          "name": "anticloud:source-commit",
+          "value": "1949e36dc886796caafbb459c3aadae43268c1d0"
+        },
+        {
+          "name": "anticloud:source-url",
+          "value": "https://github.com/chromaui/chromatic-cli"
+        },
+        {
+          "name": "anticloud:tier",
+          "value": "tier-agent"
+        }
+      ]
+    },
+    "components": [
+      {
+        "type": "library",
+        "name": "semver",
+        "version": "^7.3.5",
+        "purl": "pkg:npm/semver@^7.3.5",
+        "bom-ref": "npm/semver@^7.3.5"
+      },
+      {
+        "type": "library",
+        "name": "@actions/core",
+        "version": "^1.10.0",
+        "purl": "pkg:npm/@actions/core@^1.10.0",
+        "bom-ref": "npm/@actions/core@^1.10.0"
+      },
+      {
+        "type": "library",
+        "name": "@actions/github",
+        "version": "^5.0.0",
+        "purl": "pkg:npm/@actions/github@^5.0.0",
+        "bom-ref": "npm/@actions/github@^5.0.0"
+      },
+      {
+        "type": "library",
+        "name": "@antfu/ni",
+        "version": "^0.21.5",
+        "purl": "pkg:npm/@antfu/ni@^0.21.5",
+        "bom-ref": "npm/@antfu/ni@^0.21.5"
+      },
+      {
+        "type": "library",
+        "name": "@auto-it/slack",
+        "version": "^11.1.6",
+        "purl": "pkg:npm/@auto-it/slack@^11.1.6",
+        "bom-ref": "npm/@auto-it/slack@^11.1.6"
+      },
+      {
+        "type": "library",
+        "name": "@clack/prompts",
+        "version": "^1.4.0",
+        "purl": "pkg:npm/@clack/prompts@^1.4.0",
+        "bom-ref": "npm/@clack/prompts@^1.4.0"
+      },
+      {
+        "type": "library",
+        "name": "@discoveryjs/json-ext",
+        "version": "^0.5.7",
+        "purl": "pkg:npm/@discoveryjs/json-ext@^0.5.7",
+        "bom-ref": "npm/@discoveryjs/json-ext@^0.5.7"
+      },
+      {
+        "type": "library",
+        "name": "@eslint-community/eslint-plugin-eslint-comments",
+        "version": "^4.3.0",
+        "purl": "pkg:npm/@eslint-community/eslint-plugin-eslint-comments@^4.3.0",
+        "bom-ref": "npm/@eslint-community/eslint-plugin-eslint-comments@^4.3.0"
+      },
+      {
+        "type": "library",
+        "name": "@expo/config-plugins",
+        "version": "55.0.8",
+        "purl": "pkg:npm/@expo/config-plugins@55.0.8",
+        "bom-ref": "npm/@expo/config-plugins@55.0.8"
+      },
+      {
+        "type": "library",
+        "name": "@expo/config-types",
+        "version": "55.0.5",
+        "purl": "pkg:npm/@expo/config-types@55.0.5",
+        "bom-ref": "npm/@expo/config-types@55.0.5"
+      },
+      {
+        "type": "library",
+        "name": "@sentry/cli",
+        "version": "^2.37.0",
+        "purl": "pkg:npm/@sentry/cli@^2.37.0",
+        "bom-ref": "npm/@sentry/cli@^2.37.0"
+      },
+      {
+        "type": "library",
+        "name": "@sentry/node",
+        "version": "^8.30.0",
+        "purl": "pkg:npm/@sentry/node@^8.30.0",
+        "bom-ref": "npm/@sentry/node@^8.30.0"
+      },
+      {
+        "type": "library",
+        "name": "@snyk/dep-graph",
+        "version": "^2.9.0",
+        "purl": "pkg:npm/@snyk/dep-graph@^2.9.0",
+        "bom-ref": "npm/@snyk/dep-graph@^2.9.0"
+      },
+      {
+        "type": "library",
+        "name": "@storybook/addon-docs",
+        "version": "^10.3.4",
+        "purl": "pkg:npm/@storybook/addon-docs@^10.3.4",
+        "bom-ref": "npm/@storybook/addon-docs@^10.3.4"
+      },
+      {
+        "type": "library",
+        "name": "@storybook/builder-vite",
+        "version": "^10.3.4",
+        "purl": "pkg:npm/@storybook/builder-vite@^10.3.4",
+        "bom-ref": "npm/@storybook/builder-vite@^10.3.4"
+      },
+      {
+        "type": "library",
+        "name": "@storybook/html-vite",
+        "version": "^10.3.4",
+        "purl": "pkg:npm/@storybook/html-vite@^10.3.4",
+        "bom-ref": "npm/@storybook/html-vite@^10.3.4"
+      },
+      {
+        "type": "library",
+        "name": "@storybook/react-vite",
+        "version": "^10.3.4",
+        "purl": "pkg:npm/@storybook/react-vite@^10.3.4",
+        "bom-ref": "npm/@storybook/react-vite@^10.3.4"
+      },
+      {
+        "type": "library",
+        "name": "@tsconfig/node16",
+        "version": "^16.1.1",
+        "purl": "pkg:npm/@tsconfig/node16@^16.1.1",
+        "bom-ref": "npm/@tsconfig/node16@^16.1.1"
+      },
+      {
+        "type": "library",
+        "name": "@types/adm-zip",
+        "version": "^0.5.8",
+        "purl": "pkg:npm/@types/adm-zip@^0.5.8",
+        "bom-ref": "npm/@types/adm-zip@^0.5.8"
+      },
+      {
+        "type": "library",
+        "name": "@types/archiver",
+        "version": "^5.3.1",
+        "purl": "pkg:npm/@types/archiver@^5.3.1",
+        "bom-ref": "npm/@types/archiver@^5.3.1"
+      },
+      {
+        "type": "library",
+        "name": "@types/async-retry",
+        "version": "^1.4.3",
+        "purl": "pkg:npm/@types/async-retry@^1.4.3",
+        "bom-ref": "npm/@types/async-retry@^1.4.3"
+      },
+      {
+        "type": "library",
+        "name": "@types/cross-spawn",
+        "version": "^6.0.2",
+        "purl": "pkg:npm/@types/cross-spawn@^6.0.2",
+        "bom-ref": "npm/@types/cross-spawn@^6.0.2"
+      },
+      {
+        "type": "library",
+        "name": "@types/fs-extra",
+        "version": "^9.0.13",
+        "purl": "pkg:npm/@types/fs-extra@^9.0.13",
+        "bom-ref": "npm/@types/fs-extra@^9.0.13"
+      },
+      {
+        "type": "library",
+        "name": "@types/jsonfile",
+        "version": "^6.0.1",
+        "purl": "pkg:npm/@types/jsonfile@^6.0.1",
+        "bom-ref": "npm/@types/jsonfile@^6.0.1"
+      },
+      {
+        "type": "library",
+        "name": "@types/listr",
+        "version": "^0.14.4",
+        "purl": "pkg:npm/@types/listr@^0.14.4",
+        "bom-ref": "npm/@types/listr@^0.14.4"
+      },
+      {
+        "type": "library",
+        "name": "@types/mime-types",
+        "version": "^2.1.4",
+        "purl": "pkg:npm/@types/mime-types@^2.1.4",
+        "bom-ref": "npm/@types/mime-types@^2.1.4"
+      },
+      {
+        "type": "library",
+        "name": "@types/node",
+        "version": "18.x",
+        "purl": "pkg:npm/@types/node@18.x",
+        "bom-ref": "npm/@types/node@18.x"
+      },
+      {
+        "type": "library",
+        "name": "@types/picomatch",
+        "version": "^2.3.0",
+        "purl": "pkg:npm/@types/picomatch@^2.3.0",
+        "bom-ref": "npm/@types/picomatch@^2.3.0"
+      },
+      {
+        "type": "library",
+        "name": "@types/prompts",
+        "version": "^2.4.9",
+        "purl": "pkg:npm/@types/prompts@^2.4.9",
+        "bom-ref": "npm/@types/prompts@^2.4.9"
+      },
+      {
+        "type": "library",
+        "name": "@types/semver",
+        "version": "^7.3.9",
+        "purl": "pkg:npm/@types/semver@^7.3.9",
+        "bom-ref": "npm/@types/semver@^7.3.9"
+      },
+      {
+        "type": "library",
+        "name": "@types/ws",
+        "version": "^8",
+        "purl": "pkg:npm/@types/ws@^8",
+        "bom-ref": "npm/@types/ws@^8"
+      },
+      {
+        "type": "library",
+        "name": "@vitest/coverage-v8",
+        "version": "^4.1.2",
+        "purl": "pkg:npm/@vitest/coverage-v8@^4.1.2",
+        "bom-ref": "npm/@vitest/coverage-v8@^4.1.2"
+      },
+      {
+        "type": "library",
+        "name": "adm-zip",
+        "version": "^0.5.17",
+        "purl": "pkg:npm/adm-zip@^0.5.17",
+        "bom-ref": "npm/adm-zip@^0.5.17"
+      },
+      {
+        "type": "library",
+        "name": "ansi-html",
+        "version": "0.0.9",
+        "purl": "pkg:npm/ansi-html@0.0.9",
+        "bom-ref": "npm/ansi-html@0.0.9"
+      },
+      {
+        "type": "library",
+        "name": "any-observable",
+        "version": "^0.5.1",
+        "purl": "pkg:npm/any-observable@^0.5.1",
+        "bom-ref": "npm/any-observable@^0.5.1"
+      },
+      {
+        "type": "library",
+        "name": "archiver",
+        "version": "^5.3.0",
+        "purl": "pkg:npm/archiver@^5.3.0",
+        "bom-ref": "npm/archiver@^5.3.0"
+      },
+      {
+        "type": "library",
+        "name": "async-retry",
+        "version": "^1.3.3",
+        "purl": "pkg:npm/async-retry@^1.3.3",
+        "bom-ref": "npm/async-retry@^1.3.3"
+      },
+      {
+        "type": "library",
+        "name": "auto",
+        "version": "^11.0.5",
+        "purl": "pkg:npm/auto@^11.0.5",
+        "bom-ref": "npm/auto@^11.0.5"
+      },
+      {
+        "type": "library",
+        "name": "boxen",
+        "version": "^7.1.1",
+        "purl": "pkg:npm/boxen@^7.1.1",
+        "bom-ref": "npm/boxen@^7.1.1"
+      },
+      {
+        "type": "library",
+        "name": "chalk",
+        "version": "^4.1.2",
+        "purl": "pkg:npm/chalk@^4.1.2",
+        "bom-ref": "npm/chalk@^4.1.2"
+      },
+      {
+        "type": "library",
+        "name": "clean-package",
+        "version": "^2.2.0",
+        "purl": "pkg:npm/clean-package@^2.2.0",
+        "bom-ref": "npm/clean-package@^2.2.0"
+      },
+      {
+        "type": "library",
+        "name": "cpy",
+        "version": "^8.1.2",
+        "purl": "pkg:npm/cpy@^8.1.2",
+        "bom-ref": "npm/cpy@^8.1.2"
+      },
+      {
+        "type": "library",
+        "name": "cross-env",
+        "version": "^7.0.3",
+        "purl": "pkg:npm/cross-env@^7.0.3",
+        "bom-ref": "npm/cross-env@^7.0.3"
+      },
+      {
+        "type": "library",
+        "name": "cross-spawn",
+        "version": "^7.0.2",
+        "purl": "pkg:npm/cross-spawn@^7.0.2",
+        "bom-ref": "npm/cross-spawn@^7.0.2"
+      },
+      {
+        "type": "library",
+        "name": "debug",
+        "version": "^4.3.2",
+        "purl": "pkg:npm/debug@^4.3.2",
+        "bom-ref": "npm/debug@^4.3.2"
+      },
+      {
+        "type": "library",
+        "name": "env-ci",
+        "version": "^11.1.0",
+        "purl": "pkg:npm/env-ci@^11.1.0",
+        "bom-ref": "npm/env-ci@^11.1.0"
+      },
+      {
+        "type": "library",
+        "name": "eslint",
+        "version": "^9.39.4",
+        "purl": "pkg:npm/eslint@^9.39.4",
+        "bom-ref": "npm/eslint@^9.39.4"
+      },
+      {
+        "type": "library",
+        "name": "eslint-plugin-jsdoc",
+        "version": "^62.4.1",
+        "purl": "pkg:npm/eslint-plugin-jsdoc@^62.4.1",
+        "bom-ref": "npm/eslint-plugin-jsdoc@^62.4.1"
+      },
+      {
+        "type": "library",
+        "name": "eslint-plugin-no-secrets",
+        "version": "^2.2.1",
+        "purl": "pkg:npm/eslint-plugin-no-secrets@^2.2.1",
+        "bom-ref": "npm/eslint-plugin-no-secrets@^2.2.1"
+      },
+      {
+        "type": "library",
+        "name": "eslint-plugin-prettier",
+        "version": "^5.5.5",
+        "purl": "pkg:npm/eslint-plugin-prettier@^5.5.5",
+        "bom-ref": "npm/eslint-plugin-prettier@^5.5.5"
+      },
+      {
+        "type": "library",
+        "name": "eslint-plugin-security",
+        "version": "^3.0.1",
+        "purl": "pkg:npm/eslint-plugin-security@^3.0.1",
+        "bom-ref": "npm/eslint-plugin-security@^3.0.1"
+      },
+      {
+        "type": "library",
+        "name": "eslint-plugin-simple-import-sort",
+        "version": "^12.1.1",
+        "purl": "pkg:npm/eslint-plugin-simple-import-sort@^12.1.1",
+        "bom-ref": "npm/eslint-plugin-simple-import-sort@^12.1.1"
+      },
+      {
+        "type": "library",
+        "name": "eslint-plugin-sort-class-members",
+        "version": "^1.21.0",
+        "purl": "pkg:npm/eslint-plugin-sort-class-members@^1.21.0",
+        "bom-ref": "npm/eslint-plugin-sort-class-members@^1.21.0"
+      },
+      {
+        "type": "library",
+        "name": "eslint-plugin-unicorn",
+        "version": "^59.0.1",
+        "purl": "pkg:npm/eslint-plugin-unicorn@^59.0.1",
+        "bom-ref": "npm/eslint-plugin-unicorn@^59.0.1"
+      },
+      {
+        "type": "library",
+        "name": "execa",
+        "version": "^9.6.0",
+        "purl": "pkg:npm/execa@^9.6.0",
+        "bom-ref": "npm/execa@^9.6.0"
+      },
+      {
+        "type": "library",
+        "name": "fake-tag",
+        "version": "^2.0.0",
+        "purl": "pkg:npm/fake-tag@^2.0.0",
+        "bom-ref": "npm/fake-tag@^2.0.0"
+      },
+      {
+        "type": "library",
+        "name": "filesize",
+        "version": "^10.1.0",
+        "purl": "pkg:npm/filesize@^10.1.0",
+        "bom-ref": "npm/filesize@^10.1.0"
+      },
+      {
+        "type": "library",
+        "name": "find-up",
+        "version": "^7.0.0",
+        "purl": "pkg:npm/find-up@^7.0.0",
+        "bom-ref": "npm/find-up@^7.0.0"
+      },
+      {
+        "type": "library",
+        "name": "formdata-node",
+        "version": "^6.0.3",
+        "purl": "pkg:npm/formdata-node@^6.0.3",
+        "bom-ref": "npm/formdata-node@^6.0.3"
+      },
+      {
+        "type": "library",
+        "name": "fs-extra",
+        "version": "^10.0.0",
+        "purl": "pkg:npm/fs-extra@^10.0.0",
+        "bom-ref": "npm/fs-extra@^10.0.0"
+      },
+      {
+        "type": "library",
+        "name": "globals",
+        "version": "^15.3.0",
+        "purl": "pkg:npm/globals@^15.3.0",
+        "bom-ref": "npm/globals@^15.3.0"
+      },
+      {
+        "type": "library",
+        "name": "https-proxy-agent",
+        "version": "^7.0.2",
+        "purl": "pkg:npm/https-proxy-agent@^7.0.2",
+        "bom-ref": "npm/https-proxy-agent@^7.0.2"
+      },
+      {
+        "type": "library",
+        "name": "jiti",
+        "version": "^2.7.0",
+        "purl": "pkg:npm/jiti@^2.7.0",
+        "bom-ref": "npm/jiti@^2.7.0"
+      },
+      {
+        "type": "library",
+        "name": "json5",
+        "version": "^2.2.3",
+        "purl": "pkg:npm/json5@^2.2.3",
+        "bom-ref": "npm/json5@^2.2.3"
+      },
+      {
+        "type": "library",
+        "name": "jsonfile",
+        "version": "^6.0.1",
+        "purl": "pkg:npm/jsonfile@^6.0.1",
+        "bom-ref": "npm/jsonfile@^6.0.1"
+      },
+      {
+        "type": "library",
+        "name": "junit-report-builder",
+        "version": "3.1.0",
+        "purl": "pkg:npm/junit-report-builder@3.1.0",
+        "bom-ref": "npm/junit-report-builder@3.1.0"
+      },
+      {
+        "type": "library",
+        "name": "listr",
+        "version": "0.14.3",
+        "purl": "pkg:npm/listr@0.14.3",
+        "bom-ref": "npm/listr@0.14.3"
+      },
+      {
+        "type": "library",
+        "name": "listr-update-renderer",
+        "version": "^0.5.0",
+        "purl": "pkg:npm/listr-update-renderer@^0.5.0",
+        "bom-ref": "npm/listr-update-renderer@^0.5.0"
+      },
+      {
+        "type": "library",
+        "name": "meow",
+        "version": "^9.0.0",
+        "purl": "pkg:npm/meow@^9.0.0",
+        "bom-ref": "npm/meow@^9.0.0"
+      },
+      {
+        "type": "library",
+        "name": "mime-types",
+        "version": "^2.1.35",
+        "purl": "pkg:npm/mime-types@^2.1.35",
+        "bom-ref": "npm/mime-types@^2.1.35"
+      },
+      {
+        "type": "library",
+        "name": "mock-fs",
+        "version": "^5.1.2",
+        "purl": "pkg:npm/mock-fs@^5.1.2",
+        "bom-ref": "npm/mock-fs@^5.1.2"
+      },
+      {
+        "type": "library",
+        "name": "no-proxy",
+        "version": "^1.0.3",
+        "purl": "pkg:npm/no-proxy@^1.0.3",
+        "bom-ref": "npm/no-proxy@^1.0.3"
+      },
+      {
+        "type": "library",
+        "name": "node-ask",
+        "version": "^1.0.1",
+        "purl": "pkg:npm/node-ask@^1.0.1",
+        "bom-ref": "npm/node-ask@^1.0.1"
+      },
+      {
+        "type": "library",
+        "name": "node-fetch",
+        "version": "3.2.10",
+        "purl": "pkg:npm/node-fetch@3.2.10",
+        "bom-ref": "npm/node-fetch@3.2.10"
+      },
+      {
+        "type": "library",
+        "name": "os-browserify",
+        "version": "^0.3.0",
+        "purl": "pkg:npm/os-browserify@^0.3.0",
+        "bom-ref": "npm/os-browserify@^0.3.0"
+      },
+      {
+        "type": "library",
+        "name": "p-limit",
+        "version": "3.1.0",
+        "purl": "pkg:npm/p-limit@3.1.0",
+        "bom-ref": "npm/p-limit@3.1.0"
+      },
+      {
+        "type": "library",
+        "name": "path-browserify",
+        "version": "^1.0.1",
+        "purl": "pkg:npm/path-browserify@^1.0.1",
+        "bom-ref": "npm/path-browserify@^1.0.1"
+      },
+      {
+        "type": "library",
+        "name": "picocolors",
+        "version": "^1.1.1",
+        "purl": "pkg:npm/picocolors@^1.1.1",
+        "bom-ref": "npm/picocolors@^1.1.1"
+      },
+      {
+        "type": "library",
+        "name": "picomatch",
+        "version": "2.2.2",
+        "purl": "pkg:npm/picomatch@2.2.2",
+        "bom-ref": "npm/picomatch@2.2.2"
+      },
+      {
+        "type": "library",
+        "name": "pluralize",
+        "version": "^8.0.0",
+        "purl": "pkg:npm/pluralize@^8.0.0",
+        "bom-ref": "npm/pluralize@^8.0.0"
+      },
+      {
+        "type": "library",
+        "name": "prettier",
+        "version": "^3.2.5",
+        "purl": "pkg:npm/prettier@^3.2.5",
+        "bom-ref": "npm/prettier@^3.2.5"
+      },
+      {
+        "type": "library",
+        "name": "prompts",
+        "version": "^2.4.2",
+        "purl": "pkg:npm/prompts@^2.4.2",
+        "bom-ref": "npm/prompts@^2.4.2"
+      },
+      {
+        "type": "library",
+        "name": "react",
+        "version": "^17.0.2",
+        "purl": "pkg:npm/react@^17.0.2",
+        "bom-ref": "npm/react@^17.0.2"
+      },
+      {
+        "type": "library",
+        "name": "react-dom",
+        "version": "^17.0.2",
+        "purl": "pkg:npm/react-dom@^17.0.2",
+        "bom-ref": "npm/react-dom@^17.0.2"
+      },
+      {
+        "type": "library",
+        "name": "read-package-up",
+        "version": "^11.0.0",
+        "purl": "pkg:npm/read-package-up@^11.0.0",
+        "bom-ref": "npm/read-package-up@^11.0.0"
+      },
+      {
+        "type": "library",
+        "name": "snyk-nodejs-lockfile-parser",
+        "version": "2.10.4",
+        "purl": "pkg:npm/snyk-nodejs-lockfile-parser@2.10.4",
+        "bom-ref": "npm/snyk-nodejs-lockfile-parser@2.10.4"
+      },
+      {
+        "type": "library",
+        "name": "snyk-nodejs-plugin",
+        "version": "2.2.1",
+        "purl": "pkg:npm/snyk-nodejs-plugin@2.2.1",
+        "bom-ref": "npm/snyk-nodejs-plugin@2.2.1"
+      },
+      {
+        "type": "library",
+        "name": "sort-package-json",
+        "version": "1.50.0",
+        "purl": "pkg:npm/sort-package-json@1.50.0",
+        "bom-ref": "npm/sort-package-json@1.50.0"
+      },
+      {
+        "type": "library",
+        "name": "storybook",
+        "version": "^10.3.4",
+        "purl": "pkg:npm/storybook@^10.3.4",
+        "bom-ref": "npm/storybook@^10.3.4"
+      },
+      {
+        "type": "library",
+        "name": "string-argv",
+        "version": "^0.3.1",
+        "purl": "pkg:npm/string-argv@^0.3.1",
+        "bom-ref": "npm/string-argv@^0.3.1"
+      },
+      {
+        "type": "library",
+        "name": "strip-ansi",
+        "version": "^7.1.0",
+        "purl": "pkg:npm/strip-ansi@^7.1.0",
+        "bom-ref": "npm/strip-ansi@^7.1.0"
+      },
+      {
+        "type": "library",
+        "name": "tmp-promise",
+        "version": "3.0.2",
+        "purl": "pkg:npm/tmp-promise@3.0.2",
+        "bom-ref": "npm/tmp-promise@3.0.2"
+      },
+      {
+        "type": "library",
+        "name": "ts-dedent",
+        "version": "^1.0.0",
+        "purl": "pkg:npm/ts-dedent@^1.0.0",
+        "bom-ref": "npm/ts-dedent@^1.0.0"
+      },
+      {
+        "type": "library",
+        "name": "tsdown",
+        "version": "^0.21.8",
+        "purl": "pkg:npm/tsdown@^0.21.8",
+        "bom-ref": "npm/tsdown@^0.21.8"
+      },
+      {
+        "type": "library",
+        "name": "typescript",
+        "version": "^5.2.2",
+        "purl": "pkg:npm/typescript@^5.2.2",
+        "bom-ref": "npm/typescript@^5.2.2"
+      },
+      {
+        "type": "library",
+        "name": "typescript-eslint",
+        "version": "^8.5.8",
+        "purl": "pkg:npm/typescript-eslint@^8.5.8",
+        "bom-ref": "npm/typescript-eslint@^8.5.8"
+      },
+      {
+        "type": "library",
+        "name": "uuid",
+        "version": "^8.3.2",
+        "purl": "pkg:npm/uuid@^8.3.2",
+        "bom-ref": "npm/uuid@^8.3.2"
+      },
+      {
+        "type": "library",
+        "name": "vite",
+        "version": "^8.0.3",
+        "purl": "pkg:npm/vite@^8.0.3",
+        "bom-ref": "npm/vite@^8.0.3"
+      },
+      {
+        "type": "library",
+        "name": "vite-tsconfig-paths",
+        "version": "^5.1.4",
+        "purl": "pkg:npm/vite-tsconfig-paths@^5.1.4",
+        "bom-ref": "npm/vite-tsconfig-paths@^5.1.4"
+      },
+      {
+        "type": "library",
+        "name": "vitest",
+        "version": "^4.1.2",
+        "purl": "pkg:npm/vitest@^4.1.2",
+        "bom-ref": "npm/vitest@^4.1.2"
+      },
+      {
+        "type": "library",
+        "name": "wrap-ansi",
+        "version": "^10.0.0",
+        "purl": "pkg:npm/wrap-ansi@^10.0.0",
+        "bom-ref": "npm/wrap-ansi@^10.0.0"
+      },
+      {
+        "type": "library",
+        "name": "ws",
+        "version": "^8.18.2",
+        "purl": "pkg:npm/ws@^8.18.2",
+        "bom-ref": "npm/ws@^8.18.2"
+      },
+      {
+        "type": "library",
+        "name": "xxhash-wasm",
+        "version": "^1.0.2",
+        "purl": "pkg:npm/xxhash-wasm@^1.0.2",
+        "bom-ref": "npm/xxhash-wasm@^1.0.2"
+      },
+      {
+        "type": "library",
+        "name": "yarn-or-npm",
+        "version": "^3.0.1",
+        "purl": "pkg:npm/yarn-or-npm@^3.0.1",
+        "bom-ref": "npm/yarn-or-npm@^3.0.1"
+      },
+      {
+        "type": "library",
+        "name": "zen-observable",
+        "version": "^0.8.15",
+        "purl": "pkg:npm/zen-observable@^0.8.15",
+        "bom-ref": "npm/zen-observable@^0.8.15"
+      },
+      {
+        "type": "library",
+        "name": "zod",
+        "version": "^3.22.2",
+        "purl": "pkg:npm/zod@^3.22.2",
+        "bom-ref": "npm/zod@^3.22.2"
+      },
+      {
+        "type": "library",
+        "name": "@chromatic-com/cypress",
+        "version": "^0.*.* || ^1.0.0",
+        "purl": "pkg:npm/@chromatic-com/cypress@^0.*.* || ^1.0.0",
+        "bom-ref": "npm/@chromatic-com/cypress@^0.*.* || ^1.0.0"
+      },
+      {
+        "type": "library",
+        "name": "@chromatic-com/playwright",
+        "version": "^0.*.* || ^1.0.0",
+        "purl": "pkg:npm/@chromatic-com/playwright@^0.*.* || ^1.0.0",
+        "bom-ref": "npm/@chromatic-com/playwright@^0.*.* || ^1.0.0"
+      },
+      {
+        "type": "library",
+        "name": "@chromatic-com/vitest",
+        "version": "^0.*.* || ^1.0.0",
+        "purl": "pkg:npm/@chromatic-com/vitest@^0.*.* || ^1.0.0",
+        "bom-ref": "npm/@chromatic-com/vitest@^0.*.* || ^1.0.0"
+      },
+      {
+        "type": "library",
+        "name": "@babel/cli",
+        "version": "^7.14.8",
+        "purl": "pkg:npm/@babel/cli@^7.14.8",
+        "bom-ref": "npm/@babel/cli@^7.14.8"
+      },
+      {
+        "type": "library",
+        "name": "@babel/core",
+        "version": "^7.15.0",
+        "purl": "pkg:npm/@babel/core@^7.15.0",
+        "bom-ref": "npm/@babel/core@^7.15.0"
+      },
+      {
+        "type": "library",
+        "name": "@babel/node",
+        "version": "^7.15.4",
+        "purl": "pkg:npm/@babel/node@^7.15.4",
+        "bom-ref": "npm/@babel/node@^7.15.4"
+      },
+      {
+        "type": "library",
+        "name": "@babel/plugin-transform-runtime",
+        "version": "^7.15.0",
+        "purl": "pkg:npm/@babel/plugin-transform-runtime@^7.15.0",
+        "bom-ref": "npm/@babel/plugin-transform-runtime@^7.15.0"
+      },
+      {
+        "type": "library",
+        "name": "@babel/preset-env",
+        "version": "^7.15.0",
+        "purl": "pkg:npm/@babel/preset-env@^7.15.0",
+        "bom-ref": "npm/@babel/preset-env@^7.15.0"
+      },
+      {
+        "type": "library",
+        "name": "@babel/preset-typescript",
+        "version": "^7.15.0",
+        "purl": "pkg:npm/@babel/preset-typescript@^7.15.0",
+        "bom-ref": "npm/@babel/preset-typescript@^7.15.0"
+      },
+      {
+        "type": "library",
+        "name": "@babel/runtime",
+        "version": "^7.15.3",
+        "purl": "pkg:npm/@babel/runtime@^7.15.3",
+        "bom-ref": "npm/@babel/runtime@^7.15.3"
+      },
+      {
+        "type": "library",
+        "name": "@storybook/addon-essentials",
+        "version": "^6.5.6",
+        "purl": "pkg:npm/@storybook/addon-essentials@^6.5.6",
+        "bom-ref": "npm/@storybook/addon-essentials@^6.5.6"
+      },
+      {
+        "type": "library",
+        "name": "@storybook/builder-webpack5",
+        "version": "^6.5.6",
+        "purl": "pkg:npm/@storybook/builder-webpack5@^6.5.6",
+        "bom-ref": "npm/@storybook/builder-webpack5@^6.5.6"
+      },
+      {
+        "type": "library",
+        "name": "@storybook/csf-tools",
+        "version": "^7.0.12",
+        "purl": "pkg:npm/@storybook/csf-tools@^7.0.12",
+        "bom-ref": "npm/@storybook/csf-tools@^7.0.12"
+      },
+      {
+        "type": "library",
+        "name": "@storybook/eslint-config-storybook",
+        "version": "^3.1.2",
+        "purl": "pkg:npm/@storybook/eslint-config-storybook@^3.1.2",
+        "bom-ref": "npm/@storybook/eslint-config-storybook@^3.1.2"
+      },
+      {
+        "type": "library",
+        "name": "@storybook/linter-config",
+        "version": "^3.1.2",
+        "purl": "pkg:npm/@storybook/linter-config@^3.1.2",
+        "bom-ref": "npm/@storybook/linter-config@^3.1.2"
+      },
+      {
+        "type": "library",
+        "name": "@storybook/manager-webpack5",
+        "version": "^6.5.6",
+        "purl": "pkg:npm/@storybook/manager-webpack5@^6.5.6",
+        "bom-ref": "npm/@storybook/manager-webpack5@^6.5.6"
+      },
+      {
+        "type": "library",
+        "name": "@storybook/react",
+        "version": "^6.5.6",
+        "purl": "pkg:npm/@storybook/react@^6.5.6",
+        "bom-ref": "npm/@storybook/react@^6.5.6"
+      },
+      {
+        "type": "library",
+        "name": "@types/jest",
+        "version": "^27.5.0",
+        "purl": "pkg:npm/@types/jest@^27.5.0",
+        "bom-ref": "npm/@types/jest@^27.5.0"
+      },
+      {
+        "type": "library",
+        "name": "@types/progress-stream",
+        "version": "^2.0.2",
+        "purl": "pkg:npm/@types/progress-stream@^2.0.2",
+        "bom-ref": "npm/@types/progress-stream@^2.0.2"
+      },
+      {
+        "type": "library",
+        "name": "@typescript-eslint/eslint-plugin",
+        "version": "^5.59.8",
+        "purl": "pkg:npm/@typescript-eslint/eslint-plugin@^5.59.8",
+        "bom-ref": "npm/@typescript-eslint/eslint-plugin@^5.59.8"
+      },
+      {
+        "type": "library",
+        "name": "@typescript-eslint/parser",
+        "version": "^5.59.8",
+        "purl": "pkg:npm/@typescript-eslint/parser@^5.59.8",
+        "bom-ref": "npm/@typescript-eslint/parser@^5.59.8"
+      },
+      {
+        "type": "library",
+        "name": "babel-preset-minify",
+        "version": "^0.5.1",
+        "purl": "pkg:npm/babel-preset-minify@^0.5.1",
+        "bom-ref": "npm/babel-preset-minify@^0.5.1"
+      },
+      {
+        "type": "library",
+        "name": "dotenv",
+        "version": "^8.2.0",
+        "purl": "pkg:npm/dotenv@^8.2.0",
+        "bom-ref": "npm/dotenv@^8.2.0"
+      },
+      {
+        "type": "library",
+        "name": "esbuild-jest",
+        "version": "^0.5.0",
+        "purl": "pkg:npm/esbuild-jest@^0.5.0",
+        "bom-ref": "npm/esbuild-jest@^0.5.0"
+      },
+      {
+        "type": "library",
+        "name": "eslint-plugin-jest",
+        "version": "^27.2.1",
+        "purl": "pkg:npm/eslint-plugin-jest@^27.2.1",
+        "bom-ref": "npm/eslint-plugin-jest@^27.2.1"
+      },
+      {
+        "type": "library",
+        "name": "esm",
+        "version": "^3.2.25",
+        "purl": "pkg:npm/esm@^3.2.25",
+        "bom-ref": "npm/esm@^3.2.25"
+      },
+      {
+        "type": "library",
+        "name": "husky",
+        "version": "^7.0.0",
+        "purl": "pkg:npm/husky@^7.0.0",
+        "bom-ref": "npm/husky@^7.0.0"
+      },
+      {
+        "type": "library",
+        "name": "jest",
+        "version": "^27.0.6",
+        "purl": "pkg:npm/jest@^27.0.6",
+        "bom-ref": "npm/jest@^27.0.6"
+      },
+      {
+        "type": "library",
+        "name": "lint-staged",
+        "version": "^11.1.2",
+        "purl": "pkg:npm/lint-staged@^11.1.2",
+        "bom-ref": "npm/lint-staged@^11.1.2"
+      },
+      {
+        "type": "library",
+        "name": "node-loggly-bulk",
+        "version": "^4.0.1",
+        "purl": "pkg:npm/node-loggly-bulk@^4.0.1",
+        "bom-ref": "npm/node-loggly-bulk@^4.0.1"
+      },
+      {
+        "type": "library",
+        "name": "npm-run-all",
+        "version": "^4.0.2",
+        "purl": "pkg:npm/npm-run-all@^4.0.2",
+        "bom-ref": "npm/npm-run-all@^4.0.2"
+      },
+      {
+        "type": "library",
+        "name": "observable",
+        "version": "^2.1.4",
+        "purl": "pkg:npm/observable@^2.1.4",
+        "bom-ref": "npm/observable@^2.1.4"
+      },
+      {
+        "type": "library",
+        "name": "pkg-up",
+        "version": "^3.1.0",
+        "purl": "pkg:npm/pkg-up@^3.1.0",
+        "bom-ref": "npm/pkg-up@^3.1.0"
+      },
+      {
+        "type": "library",
+        "name": "progress-stream",
+        "version": "^2.0.0",
+        "purl": "pkg:npm/progress-stream@^2.0.0",
+        "bom-ref": "npm/progress-stream@^2.0.0"
+      },
+      {
+        "type": "library",
+        "name": "prop-types",
+        "version": "^15.7.2",
+        "purl": "pkg:npm/prop-types@^15.7.2",
+        "bom-ref": "npm/prop-types@^15.7.2"
+      },
+      {
+        "type": "library",
+        "name": "read-pkg-up",
+        "version": "^7.0.1",
+        "purl": "pkg:npm/read-pkg-up@^7.0.1",
+        "bom-ref": "npm/read-pkg-up@^7.0.1"
+      },
+      {
+        "type": "library",
+        "name": "slash",
+        "version": "^3.0.0",
+        "purl": "pkg:npm/slash@^3.0.0",
+        "bom-ref": "npm/slash@^3.0.0"
+      },
+      {
+        "type": "library",
+        "name": "tree-kill",
+        "version": "^1.2.2",
+        "purl": "pkg:npm/tree-kill@^1.2.2",
+        "bom-ref": "npm/tree-kill@^1.2.2"
+      },
+      {
+        "type": "library",
+        "name": "ts-loader",
+        "version": "^9.2.5",
+        "purl": "pkg:npm/ts-loader@^9.2.5",
+        "bom-ref": "npm/ts-loader@^9.2.5"
+      },
+      {
+        "type": "library",
+        "name": "ts-node",
+        "version": "^10.9.1",
+        "purl": "pkg:npm/ts-node@^10.9.1",
+        "bom-ref": "npm/ts-node@^10.9.1"
+      },
+      {
+        "type": "library",
+        "name": "tsup",
+        "version": "^6.7.0",
+        "purl": "pkg:npm/tsup@^6.7.0",
+        "bom-ref": "npm/tsup@^6.7.0"
+      },
+      {
+        "type": "library",
+        "name": "util-deprecate",
+        "version": "^1.0.2",
+        "purl": "pkg:npm/util-deprecate@^1.0.2",
+        "bom-ref": "npm/util-deprecate@^1.0.2"
+      },
+      {
+        "type": "library",
+        "name": "why-is-node-running",
+        "version": "^2.1.2",
+        "purl": "pkg:npm/why-is-node-running@^2.1.2",
+        "bom-ref": "npm/why-is-node-running@^2.1.2"
+      },
+      {
+        "type": "library",
+        "name": "@emotion/core",
+        "version": "10.0.22",
+        "purl": "pkg:npm/@emotion/core@10.0.22",
+        "bom-ref": "npm/@emotion/core@10.0.22"
+      },
+      {
+        "type": "library",
+        "name": "@emotion/styled",
+        "version": "10.0.23",
+        "purl": "pkg:npm/@emotion/styled@10.0.23",
+        "bom-ref": "npm/@emotion/styled@10.0.23"
+      },
+      {
+        "type": "library",
+        "name": "polished",
+        "version": "3.4.2",
+        "purl": "pkg:npm/polished@3.4.2",
+        "bom-ref": "npm/polished@3.4.2"
+      },
+      {
+        "type": "library",
+        "name": "relative-deps",
+        "version": "1.0.7",
+        "purl": "pkg:npm/relative-deps@1.0.7",
+        "bom-ref": "npm/relative-deps@1.0.7"
+      },
+      {
+        "type": "library",
+        "name": "@storybook/addon-actions",
+        "version": "^6.4.22",
+        "purl": "pkg:npm/@storybook/addon-actions@^6.4.22",
+        "bom-ref": "npm/@storybook/addon-actions@^6.4.22"
+      },
+      {
+        "type": "library",
+        "name": "@storybook/addon-links",
+        "version": "^6.4.22",
+        "purl": "pkg:npm/@storybook/addon-links@^6.4.22",
+        "bom-ref": "npm/@storybook/addon-links@^6.4.22"
+      },
+      {
+        "type": "library",
+        "name": "@types/lodash",
+        "version": "^4.14.191",
+        "purl": "pkg:npm/@types/lodash@^4.14.191",
+        "bom-ref": "npm/@types/lodash@^4.14.191"
+      },
+      {
+        "type": "library",
+        "name": "babel-loader",
+        "version": "8.0.6",
+        "purl": "pkg:npm/babel-loader@8.0.6",
+        "bom-ref": "npm/babel-loader@8.0.6"
+      },
+      {
+        "type": "library",
+        "name": "chromatic",
+        "version": "5.6.1",
+        "purl": "pkg:npm/chromatic@5.6.1",
+        "bom-ref": "npm/chromatic@5.6.1"
+      },
+      {
+        "type": "library",
+        "name": "react-docgen-typescript-loader",
+        "version": "3.6.0",
+        "purl": "pkg:npm/react-docgen-typescript-loader@3.6.0",
+        "bom-ref": "npm/react-docgen-typescript-loader@3.6.0"
+      },
+      {
+        "type": "library",
+        "name": "react-is",
+        "version": "^17.0.2",
+        "purl": "pkg:npm/react-is@^17.0.2",
+        "bom-ref": "npm/react-is@^17.0.2"
+      },
+      {
+        "type": "library",
+        "name": "is-number",
+        "version": "^7.0.0",
+        "purl": "pkg:npm/is-number@^7.0.0",
+        "bom-ref": "npm/is-number@^7.0.0"
+      },
+      {
+        "type": "library",
+        "name": "@myorg/shared",
+        "version": "workspace:*",
+        "purl": "pkg:npm/@myorg/shared@workspace:*",
+        "bom-ref": "npm/@myorg/shared@workspace:*"
+      },
+      {
+        "type": "library",
+        "name": "moment",
+        "version": "catalog:",
+        "purl": "pkg:npm/moment@catalog:",
+        "bom-ref": "npm/moment@catalog:"
+      },
+      {
+        "type": "library",
+        "name": "react-async",
+        "version": "10.0.0",
+        "purl": "pkg:npm/react-async@10.0.0",
+        "bom-ref": "npm/react-async@10.0.0"
+      }
+    ]
+  },
+  "elapsed_seconds": 344.4
+}

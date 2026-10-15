@@ -1,0 +1,16 @@
+{
+ "framework": "14_FIPS_140_3",
+ "title": "FIPS 140-3 cryptographic module validation",
+ "project": "CHROMATIC_CLI",
+ "basis": [
+  {
+   "check": "08_soc2_type2",
+   "status": "PASS",
+   "observed": "{\"authority\": \"AICPA\", \"control_ids\": [\"CC6.1\", \"CC6.2\", \"CC"
+  }
+ ],
+ "verdict": "CONTROLS EVIDENCED \u2014 all basis checks PASS",
+ "pax_provenance": "Run ID loiskleinner/pax-benchmark-runner v3, 2026-10-02, Kaggle T4 x2 (2x 16GB VRAM), Ubuntu 22.04, Python 3.12. These are PAX L5 Narrow L2 General 27B model-level results \u2014 shared model component, not this project's verdict.",
+ "bench_sha3": "1e8ac64d20d348070178e2b4b5fdb2ae9b684e5d5fbe42a3e4ba0f4228113174",
+ "register_sha3": "5559fde4738824a7ee34d4202fdbd1d395b7c9b3e5df36a88c204ea5a665ba16"
+}
